@@ -8,11 +8,11 @@ class HistoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('My ads'),
-        backgroundColor: Theme.of(context).primaryColor,
-      ),
-      drawer: const MainDrawer(),
+      // appBar: AppBar(
+      //   title: const Text('My ads'),
+      //   backgroundColor: Theme.of(context).primaryColor,
+      // ),
+      // drawer: const MainDrawer(),
       body: const Center(
           child: Text(
         'My history page',

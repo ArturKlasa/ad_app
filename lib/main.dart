@@ -28,11 +28,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Ad app',
       // theme: Provider.of<ThemeProvider>(context).themeData,
-      home: const HomeScreen(),
+      home: BottomBar(),
       theme: Provider.of<ThemeProvider>(context).themeData,
       initialRoute:
-          homeScreenRoute, //TODO: change it to logic that shows register/login/homepage???
+          bottomBarRoute, //TODO: change it to logic that shows register/login/homepage???
       routes: {
+        bottomBarRoute: (context) => const BottomBar(),
         homeScreenRoute: (context) => const HomeScreen(),
         myAdsRoute: (context) => const MyAdsScreen(),
         historyRoute: (context) => const HistoryScreen(),
