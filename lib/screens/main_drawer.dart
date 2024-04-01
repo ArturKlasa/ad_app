@@ -1,3 +1,4 @@
+import 'package:addapp/components/drawer_tile.dart';
 import 'package:addapp/constants/routes.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
@@ -50,26 +51,31 @@ class MainDrawer extends StatelessWidget {
             ),
           ),
         ),
-        ListTile(
-          //INFO: leading: Icon(Icons.person),  ---- if you want to have a leading icon add this
-          title: const Text('Look for ads'),
-          onTap: () => Navigator.of(context).pushNamed(homeScreenRoute),
+        const Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            DrawerTile(
+                text: "Look for ads",
+                icon: Icons.map,
+                onTapping: homeScreenRoute),
+            DrawerTile(
+              text: "Testing",
+              icon: Icons.ac_unit,
+              onTapping: homeScreenRoute,
+            ),
+            DrawerTile(
+                text: "My ads", icon: Icons.newspaper, onTapping: myAdsRoute),
+            DrawerTile(
+              text: "History",
+              icon: Icons.history,
+              onTapping: historyRoute,
+            ),
+            DrawerTile(
+                text: "Settings",
+                icon: Icons.settings,
+                onTapping: settingsRoute),
+          ],
         ),
-        ListTile(
-          //INFO: leading: Icon(Icons.person),  ---- if you want to have a leading icon add this
-          title: const Text('My ads'),
-          onTap: () => Navigator.of(context).pushNamed(myAdsRoute),
-        ),
-        ListTile(
-          title: const Text('History'),
-          onTap: () => Navigator.of(context).pushNamed(historyRoute),
-        ),
-        ListTile(
-          title: const Text('Settings'),
-          onTap: () {
-            Navigator.of(context).pushNamed(settingsRoute);
-          },
-        )
       ],
     ));
   }
