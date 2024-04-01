@@ -6,6 +6,7 @@ import 'package:addapp/screens/settings_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import 'screens/bottom_bar.dart';
 import 'themes/theme_provider.dart';
 
 void main() {
@@ -29,7 +30,6 @@ class MyApp extends StatelessWidget {
       // theme: Provider.of<ThemeProvider>(context).themeData,
       home: const HomeScreen(),
       theme: Provider.of<ThemeProvider>(context).themeData,
-
       initialRoute:
           homeScreenRoute, //TODO: change it to logic that shows register/login/homepage???
       routes: {
