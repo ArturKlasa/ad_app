@@ -1,0 +1,31 @@
+name: addapp
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  fluentui_icons: ^1.0.0
+  gap: ^3.0.1
+  provider: ^6.1.2
+  flutter_map: ^6.1.0
+  latlong2:
+  location_geocoder: ^1.0.5
+  geocoding: ^3.0.0
+  geocode: ^1.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
