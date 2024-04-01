@@ -1,5 +1,5 @@
-import 'package:addapp/components/drawer_tile.dart';
-import 'package:addapp/components/my_drawer_header.dart';
+import 'package:addapp/deprecated/components/drawer_tile.dart';
+import 'package:addapp/deprecated/components/my_drawer_header.dart';
 import 'package:addapp/constants/routes.dart';
 import 'package:flutter/material.dart';
 

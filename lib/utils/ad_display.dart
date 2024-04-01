@@ -11,11 +11,18 @@ class AdDisplay extends StatelessWidget {
       height: 179,
       child: Container(
         margin: const EdgeInsets.all(5),
-        decoration: const BoxDecoration(
-          color: Colors.blue,
-          borderRadius: BorderRadius.all(Radius.circular(14)),
+        decoration: BoxDecoration(
+          border: Border(
+              bottom: BorderSide(),
+              top: BorderSide(),
+              left: BorderSide(),
+              right: BorderSide()),
+          color: Theme.of(context).colorScheme.primary,
+          borderRadius: const BorderRadius.all(Radius.circular(14)),
         ),
-        child: Text("${adInfo['id'].toString()}. ${adInfo['description']}"),
+        child: Center(
+            child:
+                Text("${adInfo['id'].toString()}. ${adInfo['description']}")),
       ),
     );
   }
