@@ -2,8 +2,6 @@ import 'package:addapp/resources/ad_data.dart';
 import 'package:addapp/utils/ad_display.dart';
 import 'package:flutter/material.dart';
 
-import 'main_drawer.dart';
-
 class MyAdsScreen extends StatelessWidget {
   const MyAdsScreen({super.key});
 

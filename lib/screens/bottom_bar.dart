@@ -1,4 +1,4 @@
-import 'package:addapp/screens/history_screen.dart';
+import 'package:addapp/screens/placeholder_screen.dart';
 import 'package:addapp/screens/my_ads_screen.dart';
 import 'package:addapp/screens/settings_screen.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
@@ -31,29 +31,31 @@ class _BottomBarState extends State<BottomBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.background,
       body: Center(child: _widgetOptions[_selectedIndex]),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
         elevation: 10,
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
+        showSelectedLabels: true,
+        showUnselectedLabels: true,
         selectedItemColor: Colors.blueGrey,
         type: BottomNavigationBarType.fixed,
         unselectedItemColor: const Color(0xFF526480),
         items: const [
           BottomNavigationBarItem(
-              icon: Icon(FluentSystemIcons.ic_fluent_map_regular),
-              activeIcon: Icon(FluentSystemIcons.ic_fluent_map_filled),
-              label: "Home-Map"),
+            icon: Icon(FluentSystemIcons.ic_fluent_map_regular),
+            activeIcon: Icon(FluentSystemIcons.ic_fluent_map_filled),
+            label: "Map",
+          ),
           BottomNavigationBarItem(
               icon: Icon(FluentSystemIcons.ic_fluent_add_regular),
               activeIcon: Icon(FluentSystemIcons.ic_fluent_add_filled),
               label: "Search"),
           BottomNavigationBarItem(
-              icon: Icon(FluentSystemIcons.ic_fluent_history_regular),
-              activeIcon: Icon(FluentSystemIcons.ic_fluent_history_filled),
-              label: "Ticket"),
+              icon: Icon(FluentSystemIcons.ic_fluent_link_square_regular),
+              activeIcon: Icon(FluentSystemIcons.ic_fluent_link_filled),
+              label: "Placeholder"),
           BottomNavigationBarItem(
               icon: Icon(FluentSystemIcons.ic_fluent_settings_regular),
               activeIcon: Icon(FluentSystemIcons.ic_fluent_settings_filled),

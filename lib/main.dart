@@ -1,5 +1,5 @@
 import 'package:addapp/constants/routes.dart';
-import 'package:addapp/screens/history_screen.dart';
+import 'package:addapp/screens/placeholder_screen.dart';
 import 'package:addapp/screens/home_screen.dart';
 import 'package:addapp/screens/my_ads_screen.dart';
 import 'package:addapp/screens/settings_screen.dart';
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Ad app',
       // theme: Provider.of<ThemeProvider>(context).themeData,
-      home: BottomBar(),
+      home: const BottomBar(),
       theme: Provider.of<ThemeProvider>(context).themeData,
       initialRoute:
           bottomBarRoute, //TODO: change it to logic that shows register/login/homepage???
