@@ -49,12 +49,6 @@ class _MyAdsScreenState extends State<MyAdsScreen> {
           ),
           for (int i = 0; i < adInfo.length; i++) (AdDisplay(adInfo: adInfo[i]))
         ],
-        // const Gap(2),
-        // AdDisplay(adInfo: adInfo[0]),
-        // //TODO: add logic to automatically display all adds where the user_id corresponds to the current user
-        // const Gap(2),
-        // AdDisplay(adInfo: adInfo[1]),
-        // ],
       ),
     ));
   }

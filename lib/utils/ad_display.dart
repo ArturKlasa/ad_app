@@ -12,7 +12,7 @@ class AdDisplay extends StatelessWidget {
       child: Container(
         margin: const EdgeInsets.all(5),
         decoration: BoxDecoration(
-          border: Border(
+          border: const Border(
               bottom: BorderSide(),
               top: BorderSide(),
               left: BorderSide(),
