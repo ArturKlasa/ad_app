@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
         bottomBarRoute: (context) => const BottomBar(),
         homeScreenRoute: (context) => const HomeScreen(),
         myAdsRoute: (context) => const MyAdsScreen(),
-        historyRoute: (context) => const HistoryScreen(),
+        historyRoute: (context) => const NewMyAdsScreen(),
         settingsRoute: (context) => const SettingsScreen()
       },
     );

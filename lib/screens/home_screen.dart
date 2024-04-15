@@ -7,12 +7,13 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Home Screen"),
-        backgroundColor: Theme.of(context).colorScheme.background,
-        // backgroundColor: Theme.of(context).primaryColor,
-      ),
-      floatingActionButton: FloatingActionButton(onPressed: () {}),
+      // appBar: AppBar(
+      //   title: Text("Home Screen"),
+      //   backgroundColor: Theme.of(context).colorScheme.background,
+      //   // backgroundColor: Theme.of(context).primaryColor,
+      // ),
+      floatingActionButton: FloatingActionButton(
+          onPressed: () {}), //TODO: add this floating action button
       // drawer: const MainDrawer(),
       body: MapDisplay(),
     );

@@ -18,7 +18,7 @@ class _BottomBarState extends State<BottomBar> {
   static final List<Widget> _widgetOptions = <Widget>[
     const HomeScreen(),
     const MyAdsScreen(),
-    const HistoryScreen(),
+    const NewMyAdsScreen(),
     const SettingsScreen(),
   ];
 

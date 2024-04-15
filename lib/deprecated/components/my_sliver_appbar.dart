@@ -9,9 +9,9 @@ class MySliverAppBar extends StatefulWidget {
 
 class _SliverAppBarExampleState extends State<MySliverAppBar>
     with SingleTickerProviderStateMixin {
-  bool _pinned = true;
-  bool _snap = false;
-  bool _floating = false;
+  final bool _pinned = true;
+  final bool _snap = false;
+  final bool _floating = false;
   late TabController _tabController;
 
   @override

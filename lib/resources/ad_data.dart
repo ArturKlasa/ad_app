@@ -26,5 +26,14 @@ List<Map<String, dynamic>> adInfo = [
     'owner_user_id': 0002,
     'description': 'This is the third testing ad',
     'expiry_date': '2025-06-01'
-  }
+  },
+  // {
+  //   'id': 4,
+  //   'is_current': false,
+  //   'type': 'sell',
+  //   'date_posted': '2024-04-04',
+  //   'owner_user_id': 0003,
+  //   'description': 'This is the forth testing ad',
+  //   'expiry_date': '2026-07-01'
+  // }
 ];
